@@ -48,12 +48,14 @@ const useGuess = () => {
     if (randomNumber === parsedGuessedNumber) {
       message = MATCH;
       messageClass = 'match';
-    } else if (parsedGuessedNumber < 5 && parsedGuessedNumber < randomNumber) {
-      message = LOW;
-      messageClass = 'low';
-    } else if (parsedGuessedNumber >= 5 && parsedGuessedNumber < randomNumber) {
-      message = MODERATE;
-      messageClass = 'moderate';
+    } else if (parsedGuessedNumber < randomNumber) {
+      if (parsedGuessedNumber < 5) {
+        message = LOW;
+        messageClass = 'low';
+      } else {
+        message = MODERATE;
+        messageClass = 'moderate';
+      }
     } else if (parsedGuessedNumber > randomNumber) {
       message = HIGH;
       messageClass = 'high';
