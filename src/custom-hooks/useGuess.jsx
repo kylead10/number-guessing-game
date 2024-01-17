@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { HIGH, LOW, MATCH, MODERATE } from '../utils/constants';
+import { HIGH, LOW, MATCH, MODERATE } from '../utils/constant';
 
 const useGuess = () => {
   const parsedNumber = JSON.parse(window.localStorage.getItem('guess')) || {};
