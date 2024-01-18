@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import Confetti from 'react-confetti';
 import Header from './components/Header';
