@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import Confetti from 'react-confetti';
 import Header from './components/Header';
@@ -14,6 +15,8 @@ const App = () => {
     messageClass,
   } = useGuess();
 
+  const isButtonDisabled = !guessedNumber.trim() || !randomNumber;
+
   return (
     <div className='main-content'>
       <Header />
@@ -29,7 +32,7 @@ const App = () => {
           variant='primary'
           type='submit'
           className='mt-3 mb-3'
-          disabled={!guessedNumber.trim() || !randomNumber}
+          disabled={isButtonDisabled}
         >
           Check Guess!
         </Button>
