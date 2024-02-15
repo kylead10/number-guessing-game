@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite pro
 
 A number guessing game with hints to help you get the right number.
 
