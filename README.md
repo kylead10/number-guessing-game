@@ -1,5 +1,4 @@
 # React + Vite project:
-
 A number guessing game with hint to help you get the right number.
 
 
