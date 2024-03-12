@@ -1,4 +1,4 @@
-React+Vite project:
+React+Vite project: 
 This is a number guessing game with hint to help you get the right number.
 
 Check out here: 
