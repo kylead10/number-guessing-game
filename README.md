@@ -1,6 +1,5 @@
 React+Vite project: 
 This is a number guessing game with hint to help you get the right number.
-
 Check out here: 
 
 https:  //number-guessing-game-delta.vercel.app/
